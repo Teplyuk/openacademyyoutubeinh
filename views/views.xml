@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="openacademy_youtube_inh.list">
+      <field name="name">openacademy_youtube_inh list</field>
+      <field name="model">openacademy_youtube_inh.openacademy_youtube_inh</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="openacademy_youtube_inh.action_window">
+      <field name="name">openacademy_youtube_inh window</field>
+      <field name="res_model">openacademy_youtube_inh.openacademy_youtube_inh</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="openacademy_youtube_inh.action_server">
+      <field name="name">openacademy_youtube_inh server</field>
+      <field name="model_id" ref="model_openacademy_youtube_inh_openacademy_youtube_inh"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="openacademy_youtube_inh" id="openacademy_youtube_inh.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="openacademy_youtube_inh.menu_1" parent="openacademy_youtube_inh.menu_root"/>
+    <menuitem name="Menu 2" id="openacademy_youtube_inh.menu_2" parent="openacademy_youtube_inh.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="openacademy_youtube_inh.menu_1_list" parent="openacademy_youtube_inh.menu_1"
+              action="openacademy_youtube_inh.action_window"/>
+    <menuitem name="Server to list" id="openacademy_youtube_inh" parent="openacademy_youtube_inh.menu_2"
+              action="openacademy_youtube_inh.action_server"/>
+-->
+  </data>
+</odoo>
