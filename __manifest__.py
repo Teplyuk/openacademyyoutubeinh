@@ -7,7 +7,9 @@
     'website': "",
     'category': 'Uncategorized',
     'version': '0.1',
-    'depends': ['sale'],
-    'data': [],
+    'depends': ['sale', 'sale_stock'],
+    'data': [
+        'views/sale_order_view.xml'
+    ],
     'demo': [],
 }

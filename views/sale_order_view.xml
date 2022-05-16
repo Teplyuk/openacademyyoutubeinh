@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="view_order_form_inherit" model="ir.ui.view">
+            <field name="name">sale.order.inherit</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form"/> <!-- для поля: payment_term_id-->
+<!--        <field name="inherit_id" ref="sale_stock.view_order_form_inherit_sale_stock"/> // для поля: warehouse_id -->
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='payment_term_id']" position="before">    <!--  position="after" -->
+                    <field name="confirmed_user_id"/>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>
+
