@@ -3,7 +3,7 @@
     'name': "openacademy_youtube_inh",
     'summary': "",
     'description': "",
-    'author': "My Company",
+    'author': "My Company2",
     'website': "",
     'category': 'Uncategorized',
     'version': '0.1',
