@@ -9,7 +9,8 @@
     'version': '0.1',
     'depends': ['sale', 'sale_stock'],
     'data': [
-        'views/sale_order_view.xml'
+        'views/sale_order_view.xml',
+        'views/account_view_form.xml'
     ],
     'demo': [],
 }
